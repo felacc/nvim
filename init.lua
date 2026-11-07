@@ -21,4 +21,25 @@ vim.opt.incsearch = true
 -- Interface
 vim.opt.termguicolors = true
 vim.opt.signcolumn = "yes" 
+vim.opt.cursorline = true
+vim.opt.wrap = false
 vim.opt.scrolloff = 8
+
+-- Clipboard
+vim.opt.clipboard = "unnamedplus" -- share system keyboard!
+
+-- Splits
+vim.opt.splitright = true -- vertical splits on the right :vsplit
+vim.opt.splitbelow = true -- horizontal splits below :split
+
+-- Undo behavior
+vim.opt.undofile = true -- persistent undo after closing file
+
+-- Swap file
+vim.opt.swapfile = true
+
+-- Keymaps
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- move line down in visual line mode
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- move line up in visual line mode
+
+

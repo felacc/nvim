@@ -19,6 +19,12 @@ return {
         },
 
         config = function(_, opts)
+
+            -- Enable nvim-cmp completion capabilities
+            vim.lsp.config("*", {
+                capabilities = require("cmp_nvim_lsp").default_capabilities(),
+            })
+
             -- Configure Lua's language server
             vim.lsp.config("lua_ls", {
                 settings = {

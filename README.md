@@ -14,6 +14,7 @@ Install the following packages on Ubuntu:
 sudo apt update
 sudo apt install -y \
     neovim \
+    git \
     curl \
     unzip \
     build-essential \
@@ -34,6 +35,7 @@ sudo apt install -y \
 | Package | Purpose |
 |---|---|
 | `neovim` | Text editor (0.11+) |
+| `git` | Version control and plugin management |
 | `curl`, `unzip` | Downloading and extracting dependencies |
 | `build-essential` | GCC, G++, Make, and compilation tools |
 | `cmake`, `ninja-build`, `pkg-config` | Building plugins and external tools |
